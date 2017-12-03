@@ -1,0 +1,60 @@
+/* CSS validated at https://jigsaw.w3.org/css-validator/ */
+@font-face{
+    font-family: "allura";
+    src: url("css/Allura-Regular.otf");    
+}
+body{
+    background-color: rgb(206, 29, 29);
+    font-family: 'allura',times,serif;
+    font-size: 2em;
+}
+
+.carousel {
+    padding:100px;
+}
+
+.navbar-nav.navbar-center {
+    margin-left:30%;
+}
+
+/* Grid Layout */
+#A2 .container{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "main1 main2"
+    "aside1 aside2"
+    "footer footer";
+}
+
+#A2 author{
+    grid-area: main2;
+}
+
+#A2 authortext{
+    grid-area: aside2;
+}
+
+#A2 #otherbooks{
+    grid-area: aside1;
+}
+
+#A2 h1{
+    grid-area: header;
+    text-align: center;
+}
+
+#A2 #cover{
+    grid-area: main1;
+}
+
+#A2 #carousel{
+    grid-area: footer;
+}
+
+#authortext{
+    color:white;
+}
